@@ -1,0 +1,25 @@
+{
+  "name": "expense-update",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.27.2",
+    "axios": "^1.7.7",
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.4.5",
+    "google-spreadsheet": "^4.1.4",
+    "googleapis": "^144.0.0",
+    "pdf-parse": "^1.1.1",
+    "puppeteer": "^23.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.4"
+  }
+}
