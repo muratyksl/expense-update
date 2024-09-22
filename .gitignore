@@ -1,3 +1,27 @@
+# Dependency directories
+node_modules/
+
+# Environment variables
 .env
+
+# macOS system files
+.DS_Store
+
+# Google Service Account key
 sheet-info.json
-node_modules
+
+# Logs
+*.log
+
+# Build output
+dist/
+build/
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Operating System Files
+Thumbs.db
