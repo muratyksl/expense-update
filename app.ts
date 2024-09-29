@@ -60,10 +60,15 @@ async function extractPrice(
       },
     ],
   });
+  const content = response.content[0];
+  if (content.type !== 'text') {
+    console.error(`Unexpected content type for ${serviceName}`);
+    return -1;
+  }
   console.log(
-    `Claude's response for ${serviceName}: ${response.content[0].text.trim()}`
+    `Claude's response for ${serviceName}: ${content.text.trim()}`
   );
-  const priceString = response.content[0].text.trim();
+  const priceString = content.text.trim();
   const priceMatch = priceString.match(/\d+(\.\d+)?/);
   return priceMatch ? parseFloat(priceMatch[0]) : -1;
 }
